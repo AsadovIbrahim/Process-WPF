@@ -59,9 +59,8 @@ namespace Processes_WPF
             }
         }
 
-        private void processListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-           
-        }
+
+
     }
+
 }

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Background="#36393F">
     <Grid>
-        <ListBox Name="processListBox" HorizontalAlignment="Center" VerticalAlignment="Top"  Width="550" Height="220" Margin="0,20,0,0" SelectionChanged="processListBox_SelectionChanged"/>
+        <ListBox Name="processListBox" HorizontalAlignment="Center" VerticalAlignment="Top"  Width="550" Height="220" Margin="0,20,0,0"/>
         <StackPanel Margin="0,200,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
             <Button Style="{StaticResource Buttons}" Height="50" Content="Show Processes" Click="ShowProcesses_Click" />
             <Button Style="{StaticResource Buttons}" Height="50" Margin="60,0,0,0" Content="Create New Process" Click="CreateNewProcess_Click"  />
