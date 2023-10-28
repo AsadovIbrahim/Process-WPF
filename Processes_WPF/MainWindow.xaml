@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Processes_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Background="#36393F">
     <Grid>
-        <ListBox Name="processListBox" HorizontalAlignment="Left" VerticalAlignment="Top"  Width="450" Height="150"/>
-        <StackPanel Orientation="Horizontal">
-            <Button Height="50" Content="Show Processes" Click="ShowProcesses_Click" />
-            <Button Height="50" Margin="60,0,0,0" Content="Create New Process" Click="CreateNewProcess_Click"  />
-            <Button Height="50" Margin="60,0,0,0" Content="Kill Process" Click="KillProcess_Click"  />
+        <ListBox Name="processListBox" HorizontalAlignment="Center" VerticalAlignment="Top"  Width="550" Height="220" Margin="0,20,0,0"/>
+        <StackPanel Margin="0,200,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Style="{StaticResource Buttons}" Height="50" Content="Show Processes" Click="ShowProcesses_Click" />
+            <Button Style="{StaticResource Buttons}" Height="50" Margin="60,0,0,0" Content="Create New Process" Click="CreateNewProcess_Click"  />
+            <Button Style="{StaticResource Buttons}" Height="50" Margin="60,0,0,0" Content="Kill Process" Click="KillProcess_Click"  />
         </StackPanel>
     </Grid>
 </Window>

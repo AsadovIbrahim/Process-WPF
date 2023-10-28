@@ -19,3 +19,4 @@ C:\Users\Asus\source\repos\Processes_WPF\Processes_WPF\obj\Debug\net6.0-windows\
 C:\Users\Asus\source\repos\Processes_WPF\Processes_WPF\obj\Debug\net6.0-windows\Processes_WPF.pdb
 C:\Users\Asus\source\repos\Processes_WPF\Processes_WPF\obj\Debug\net6.0-windows\Processes_WPF.genruntimeconfig.cache
 C:\Users\Asus\source\repos\Processes_WPF\Processes_WPF\obj\Debug\net6.0-windows\ref\Processes_WPF.dll
+C:\Users\Asus\source\repos\Processes_WPF\Processes_WPF\obj\Debug\net6.0-windows\App.baml

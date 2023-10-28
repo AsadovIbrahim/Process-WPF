@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 
 namespace Processes_WPF
 {
-   
+
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -27,8 +27,7 @@ namespace Processes_WPF
         private void ShowProcesses_Click(object sender, RoutedEventArgs e)
         {
             processListBox.Items.Clear();
-            Process[]processes = Process.GetProcesses();
-
+            Process[] processes = Process.GetProcesses();
             foreach (Process process in processes)
             {
                 processListBox.Items.Add($"{process.Id}-{process.ProcessName}");
