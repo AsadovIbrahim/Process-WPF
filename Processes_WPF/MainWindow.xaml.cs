@@ -1,18 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Processes_WPF
 {
@@ -40,7 +29,7 @@ namespace Processes_WPF
             {
                 Process.Start("notepad.exe");
             }
-            catch(Exception ex )
+            catch (Exception ex)
             {
                 MessageBox.Show($"Error:{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
@@ -54,19 +43,25 @@ namespace Processes_WPF
                 int processId = Convert.ToInt32(selectedItem.Split('-')[0].Trim());
                 try
                 {
-                    Process process=Process.GetProcessById(processId);
+                    Process process = Process.GetProcessById(processId);
                     process.Kill();
-                    MessageBox.Show("Process terminated succesfully!","Sucsess",MessageBoxButton.OK,MessageBoxImage.Information);
+                    processListBox.Items.Remove(selectedItem);
+                    MessageBox.Show("Process terminated succesfully!", "Sucsess", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
             }
             else
             {
-                MessageBox.Show("Please select process to terminate!","Error",MessageBoxButton.OK,MessageBoxImage.Error);
+                MessageBox.Show("Please select process to terminate!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        private void processListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+           
         }
     }
 }
